@@ -1,7 +1,7 @@
 FROM docker-virtual.art.local/basic-image-builder:latest
 
 ENV JENKINS_USER_HOME /home/jenkins
-ENV ARTIFACTORY_BASE_URL http://172.22.62.138:8081/artifactory
+ARG ARTIFACTORY_BASE_URL="http://172.22.62.138:8081/artifactory"
 ARG ARTIFACTORY_AUTH_KEY="Y2lfdXNlcjpBUDI0WDdwUzRZM1A4VHdQcVF0SDR5ZHRtdm8="
 
 #versions
