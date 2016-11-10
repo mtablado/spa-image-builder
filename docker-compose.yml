@@ -3,6 +3,9 @@ services:
     spa-image-builder:
         build:
             context: .
+            args:
+                ARTIFACTORY_AUTH_KEY: miguel
+                ARTIFACTORY_BASE_URL: http://192.168.99.100:8081/artifactory
         ports:
         - "2222:22"
         container_name: spa-image-builder
